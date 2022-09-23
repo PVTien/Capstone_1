@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    font-family: 'Jost', sans-serif;
+    color: #696969;
+}
+
+
+/* HEADER */
+header {
+    border: 1px solid red;
+    position: fixed;
+    top: 40px;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+.navbar .navbar-brand span {
+    color: #189a46;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.navbar-nav .nav-item {
+    margin: 0 5px;
+}
+.navbar-nav .nav-item.active .nav-link {
+    color: #189a46;
+}
+.navbar-nav .nav-item.dropdown .nav-link i {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.navbar-nav .nav-item .nav-link, .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: black;
+    font-size: 1.2rem;
+    transition: all .5s;
+}
+.navbar-nav .nav-item:hover .nav-link, .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    color: #189a46;
+    background-color: white;
+}
+.navbar-nav .nav-item::after, .navbar-nav .nav-item .dropdown-menu .dropdown-item::after {
+    content: "";    
+    height: 0.1rem;
+    background-color: #189a46;
+    display: block;
+    width: 0;
+    transition: all .5s;
+}
+.navbar-nav .nav-item:hover::after, .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover::after {
+    width: 100%;
+}
