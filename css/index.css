@@ -24,6 +24,7 @@ a.read {
     text-decoration: none;
     border-bottom: 2px solid #189a46;
     margin-top: 20px;
+    display: inline-block;
     transition: all .5s;
 }
 a.read:hover {
@@ -163,4 +164,40 @@ header {
 }
 .about .about__content p {
     font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+
+/* FEATURE */
+.feature {
+    background-color: rgba(147, 107, 232, 0.05);
+}
+.feature .card {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 20px 10px;
+    transition: all .5s;
+}
+.feature .card:hover {
+    background-color: rgba(147, 107, 232, 0.05);
+}
+.feature .card i {
+    color: #189a46;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.feature .card h4 {
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    transition: all .5s;
+}
+.feature .card h4:hover {
+    color: #189a46;
+}
+.feature .card p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
 }
