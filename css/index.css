@@ -139,7 +139,7 @@ header {
     border-radius: 25px;
     border: none;
     opacity: 1;
-    margin: 0 8px;
+    margin: 0 8px 20px;
     transition: all .1s;
 }
 .carousel .carousel-indicators li.active, .carousel .carousel-indicators li:hover {
@@ -227,4 +227,22 @@ header {
     padding: 8px;
     border-radius: 50%;
     margin-right: 15px;
+}
+
+
+/* NUMBER */
+.number {
+    background-color: #189a46;
+    color: white;
+    text-align: center;
+}
+.number p {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.number h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.8;
 }
