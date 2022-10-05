@@ -246,3 +246,97 @@ header {
     font-weight: 400;
     opacity: 0.8;
 }
+
+
+/* PACKAGES */
+.packages {
+    background-color: rgba(147, 107, 232, 0.05);
+    text-align: center;
+}
+.packages .title h6 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.packages .packages__card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 0;
+    align-self: center;
+}
+.packages .card__top h6 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+}
+.packages .card__top h4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #189a46;
+    margin: 15px 0 20px;
+}
+.packages .card__top label {
+    font-size: 1.5rem;
+    vertical-align: text-top;
+}
+.packages .card__top span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #999;
+}
+.packages .card__bottom__text li {
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+.packages .card__bottom__button a.btn__green {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    background-color: #189a46;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.packages .card__bottom__button a.btn__green:hover {
+    background-color: #116e32;
+}
+.packages .card__bottom__button a.btn__green:focus {
+    background-color: #116e32;
+    box-shadow: 0 0 0 0.2rem rgb(15 162 67 / 65%);
+}
+.packages .card__bottom__button {
+    margin-top: 30px;
+}
+.packages .packages__card.active {
+    box-shadow: 0 10px 30px 0 rgb(17 17 17 / 9%);
+    z-index: 1;
+    height: 630px;
+}
+.packages .packages__card.active .card__top {
+    background-color: #189a46;
+    padding: 50px 30px 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.packages .packages__card.active .card__top h5 {
+    background-color: white;
+    color: #189a46;
+    font-size: 1rem;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+.packages .packages__card.active .card__top h6, .packages__card.active .card__top h4, .packages__card.active .card__top span {
+    color: white;
+}
+.packages .card__bottom {
+    padding: 30px 30px 50px;
+}
+.packages .card__top {
+    padding-top: 50px;
+}
