@@ -31,6 +31,15 @@
       crossorigin="anonymous"
     />
 
+    <!-- VIDEO POPUP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+      integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- MY CSS -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -312,7 +321,7 @@
       </div>
     </section>
     <section class="packages py-5">
-      <div class="container">
+      <div class="container py-4">
         <div class="title mb-5">
           <h6>Our Plans</h6>
           <h3>Affordable Packages</h3>
@@ -340,24 +349,24 @@
           </div>
           <div class="packages__card active col-4">
             <div class="card__top">
-                <h5>SAVE 10%</h5>
-                <h6>Standard Package</h6>
-                <h4><label>$</label>39<span>/month</span></h4>
+              <h5>SAVE 10%</h5>
+              <h6>Standard Package</h6>
+              <h4><label>$</label>39<span>/month</span></h4>
+            </div>
+            <div class="card__bottom">
+              <div class="card__bottom__text">
+                <ul>
+                  <li>5 Dog Walk</li>
+                  <li>3 Vet Visit</li>
+                  <li>3 Pet Spa</li>
+                  <li>Free Supports</li>
+                  <li>Customer Support</li>
+                </ul>
               </div>
-              <div class="card__bottom">
-                <div class="card__bottom__text">
-                  <ul>
-                    <li>5 Dog Walk</li>
-                    <li>3 Vet Visit</li>
-                    <li>3 Pet Spa</li>
-                    <li>Free Supports</li>
-                    <li>Customer Support</li>
-                  </ul>
-                </div>
-                <div class="card__bottom__button">
-                  <a class="btn__green" href="#buy">Get Started</a>
-                </div>
+              <div class="card__bottom__button">
+                <a class="btn__green" href="#buy">Get Started</a>
               </div>
+            </div>
           </div>
           <div class="packages__card col-4">
             <div class="card__top">
@@ -382,6 +391,49 @@
         </div>
       </div>
     </section>
+    <section class="intro py-5">
+      <div class="container py-5 px-5 text-center">
+        <div class="intro__text">
+          <div class="title">
+            <h6>BETTER PET NUTRITION.</h6>
+            <h3>The Finest Fresh Food And All Your Pet Needs.</h3>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum
+            dolor sit amet elit consec tetur adipisi elit. Lorem ipsum dolor sit
+            amet elit consec tetur adipisi elit. Iure voluptatibus explicabo
+            officia.
+          </p>
+        </div>
+        <div class="intro__video mt-5 position-relative">
+          <img src="./img/banner2.jpg" alt="" class="img-fluid" />
+          <a
+            href="#small-dialog"
+            class="video__play popup-with-zoom-anim position-absolute"
+          >
+            <span class="play__icon">
+              <i class="fa-solid fa-play"></i>
+            </span>
+          </a>
+          <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+            <iframe
+              src="https://player.vimeo.com/video/101587706"
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+          <iframe
+            src="https://player.vimeo.com/video/101587706"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </div>
+    </section>
 
     <!-- BS4 JS -->
     <script
@@ -395,12 +447,67 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- JQUERY JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <!-- COUNTING UP JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/jquery.countup.min.js"></script>
     <script>
-      $('.counter').countUp();
+      $(".counter").countUp();
     </script>
 
+    <!-- VIDEO POPUP JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+      integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".popup-with-zoom-anim").magnificPopup({
+          type: "inline",
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: "auto",
+
+          closeBtnInside: true,
+          preloader: false,
+
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
+        });
+
+        $(".popup-with-move-anim").magnificPopup({
+          type: "inline",
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: "auto",
+
+          closeBtnInside: true,
+          preloader: false,
+
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-slide-bottom",
+        });
+      });
+    </script>
   </body>
 </html>
