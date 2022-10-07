@@ -30,6 +30,23 @@ a.read {
 a.read:hover {
     color: #189a46;
 }
+.btn__green {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    background-color: #189a46;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.btn__green:hover {
+    background-color: #116e32;
+}
+.btn__green:focus {
+    background-color: #116e32;
+    box-shadow: 0 0 0 0.2rem rgb(15 162 67 / 65%);
+}
 
 
 /* HEADER */
@@ -289,23 +306,9 @@ header {
     margin-bottom: 15px;
     font-size: 1.2rem;
 }
-.packages .card__bottom__button a.btn__green {
-    font-size: 1.2rem;
-    font-weight: 400;
+.packages .card__bottom__button a {
     text-decoration: none;
     color: white;
-    background-color: #189a46;
-    display: inline-block;
-    padding: 12px 30px;
-    border-radius: 10px;
-    transition: all .5s;
-}
-.packages .card__bottom__button a.btn__green:hover {
-    background-color: #116e32;
-}
-.packages .card__bottom__button a.btn__green:focus {
-    background-color: #116e32;
-    box-shadow: 0 0 0 0.2rem rgb(15 162 67 / 65%);
 }
 .packages .card__bottom__button {
     margin-top: 30px;
@@ -445,6 +448,26 @@ header {
     background-color: #189a46;
 }
 
+
+/* EMAIL */
+.email .email__content p {
+    font-size: 1.2rem;
+}
+.email .email__content input {
+    padding: 0 20px;
+    height: 60px;
+    border-radius: 10px;
+    color: #696969;
+    flex-basis: 70%;
+}
+.email .email__content input:focus {
+    border: 1px solid #189a46;
+    box-shadow: none;
+}
+.email .email__content button {
+    flex-basis: 27%;
+    border: none;
+}
 
 
 
