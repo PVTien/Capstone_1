@@ -391,6 +391,60 @@ header {
 }
 
 
+/* TESTIMONIALS */
+.testimonial {
+    background-color: rgba(147, 107, 232, 0.05);
+}
+.testimonial .item__content {
+    background-color: white;
+    padding: 40px 30px;
+    box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
+    border-radius: 10px;
+}
+.testimonial .item__content blockquote {
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.testimonial blockquote q {
+    font-size: 1.2rem;
+}
+.testimonial blockquote q::before {
+    font-family: "Merriweather", serif;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #189a46;
+}
+.testimonial .testimonial__avt .avt__img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonial .testimonial__avt .avt__text {
+    margin-left: 20px;
+    padding-top: 10px;
+}
+.testimonial .testimonial__avt .avt__text h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+.testimonial .owl-dots .owl-dot span {
+    height: 10px;
+    width: 10px;
+    border-radius: 25px;
+    border: none;
+    opacity: 1;
+    margin: 30px 8px 0;
+    transition: all .1s;
+}
+.testimonial .owl-dots .owl-dot.active span, .testimonial .owl-dots .owl-dot span:hover {
+    height: 10px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: #189a46;
+}
+
 
 
 
