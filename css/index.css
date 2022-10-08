@@ -470,6 +470,45 @@ header {
 }
 
 
+/* FOOTER */
+footer {
+    background-color: #111;
+}
+footer .footer__content h6 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+footer .footer__content li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+footer .footer__content a {
+    color: #696969;
+    text-decoration: none;
+    transition: all .3s;
+}
+footer .footer__content a:hover {
+    color: white;
+}
+footer .footer__content .social__network li {
+    display: inline-block;
+    margin-right: 15px;
+}
+footer .copyright p {
+    margin-bottom: 0;
+}
+footer .copyright a {
+    color: #f53626;
+    opacity: 0.9;
+}
+footer .copyright {
+    border-top: 1px solid rgba(103, 99, 99, 0.14);
+}
+
+
+
 
 @keyframes ripple {
     0% {
