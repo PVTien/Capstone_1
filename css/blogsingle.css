@@ -1,0 +1,161 @@
+*{
+    font-family: 'Jost', sans-serif;
+}
+.body{
+    position: relative;
+
+}
+ .navbar {
+    top: 30px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+} 
+/* .nav-icon i:hover{
+
+} */
+
+.navbar-brand {
+font-weight: 700;
+font-size: 30px;
+}
+.navbar .collapse .nav-item .nav-link{
+    color: black;
+}
+.navbar .collapse .nav-item .nav-link .dropdown-toggle{
+   width: 10px;
+}
+
+.navbar .collapse .nav-item hr{
+    height: 3px;
+    color: #189a46;
+    opacity: 0;
+}
+.navbar .collapse .nav-item hr{
+    height: 2px;
+    color: #189a46;
+    opacity: 0;
+    width: 80%;
+    margin: auto;
+}
+
+.navbar .collapse .nav-item .nav-link:hover{
+    color: #189a46;
+}
+.navbar .collapse .nav-item:hover hr{
+    color: #189a46;
+    opacity: 1;
+}
+.navbar .collapse .nav-item .dropdown-item:hover{
+    color: #189a46;
+}
+.navbar .collapse .nav-item .dropdown-item:hover hr{
+    color: #189a46;
+    opacity: 1;
+}
+
+.content{
+    background-image: url(../img/banner4.jpg);
+    /* height: 200px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    margin-top: 130px ;
+    color: black;
+   background-position: center;
+   backdrop-filter: blur(5px);
+   filter: grayscale(70%);
+}
+.content-item{
+    text-align: center;
+padding-top: 20px;
+
+}
+.content-item h1{
+    color: white;
+    font-weight: 600;
+ 
+}
+.content-item p{
+    color: white;
+    font-size: 20px;
+}
+.content::before{
+    content: "";
+    opacity: 0.6;
+    background-color: black;
+   
+}
+.container-img img{
+    border-radius: 20px;
+   /* object-fit: cover; */
+   width: 100%;
+}
+.container .container-text h1{
+    font-weight: 700;
+}
+
+.content-img img{
+    /* width: 70%; */
+    height: 160px;
+    border-radius: 30px;
+}
+.container-content{
+    width: 85%;
+    margin: auto;
+}
+.content-text{
+    width: 85%;
+    margin: auto;
+}
+.content2-img img{
+    height: 50px;
+    border-radius: 10px;
+    width: 50px;
+
+}
+.content2-img{
+    width: 50%;
+}
+.comment h3{
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.comment-img img{
+    height: 80px;
+    min-width: 100%;
+}
+.card-group{
+    gap: 30px;
+    
+}
+.card-group .card img {
+       
+        height: 250px;
+        /* border-radius: 20px 20px 0 0; */
+}
+.card {
+       border: none;
+    } 
+.card-body h5 a:hover {
+    color:#189a46;
+}
+.input-group {
+    gap: 10px;
+}
+.inputx textarea{
+   min-height: 140px;
+}
+.container-input button{
+   float: right;
+}
+.input-group input,.inputx textarea{
+    background-color: #f9f7fe;
+    border-radius: 20px;
+}
+.hr{
+    width: 100%;
+    height: 0.5px;
+    background-color: #7777;
+}
