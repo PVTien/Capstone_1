@@ -32,7 +32,7 @@
     />
 
     <!-- VIDEO POPUP CSS -->
-    <link rel="stylesheet" href="./css/magnific-popup.css">
+    <link rel="stylesheet" href="./css/magnific-popup.css" />
 
     <!-- OWL CAROUSEL CSS -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
@@ -42,10 +42,10 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
 
-  <body>
+  <body id="myBody">
     <header>
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="index.html"><span>Pooch Care</span></a>
           <button
             class="navbar-toggler"
@@ -87,8 +87,12 @@
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="./blogposts.html">Blog Posts</a>
-                  <a class="dropdown-item" href="./blogsingle.html">Blog Single</a>
+                  <a class="dropdown-item" href="./blogposts.html"
+                    >Blog Posts</a
+                  >
+                  <a class="dropdown-item" href="./blogsingle.html"
+                    >Blog Single</a
+                  >
                   <a class="dropdown-item" href="#">Landing Page</a>
                 </div>
               </li>
@@ -96,6 +100,12 @@
                 <a class="nav-link" href="./contact.html">Contact</a>
               </li>
             </ul>
+          </div>
+          <div class="switch__theme">
+            <button id="btn__switch">
+              <i class="fa-regular fa-sun"></i>
+              <i class="fa-regular fa-moon"></i>
+            </button>
           </div>
         </nav>
       </div>
@@ -765,22 +775,6 @@
           removalDelay: 300,
           mainClass: "my-mfp-zoom-in",
         });
-
-        $(".popup-with-move-anim").magnificPopup({
-          type: "inline",
-
-          fixedContentPos: false,
-          fixedBgPos: true,
-
-          overflowY: "auto",
-
-          closeBtnInside: true,
-          preloader: false,
-
-          midClick: true,
-          removalDelay: 300,
-          mainClass: "my-mfp-slide-bottom",
-        });
       });
     </script>
 
@@ -810,6 +804,13 @@
           },
         });
       });
+    </script>
+
+    <!-- DARK THEME -->
+    <script>
+      document.getElementById("btn__switch").onclick = function () {
+        document.getElementById("myBody").classList.toggle("dark");
+      };
     </script>
   </body>
 </html>

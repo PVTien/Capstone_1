@@ -507,8 +507,6 @@ footer .copyright {
 }
 
 
-
-
 @keyframes ripple {
     0% {
         box-shadow: 0 0 0 0 rgba(15, 162, 66, 0.164), 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25);
@@ -584,4 +582,121 @@ footer .copyright {
     .email .email__content input {
         flex-basis: 100%;
     }
+}
+
+
+/* DARK THEME */
+header button#btn__switch {
+    border: none;
+    background-color: transparent;
+    color: #696969;
+    font-size: 25px;
+    margin-left: 20px;
+}
+header #btn__switch .fa-sun {
+    display: none;
+}
+header #btn__switch .fa-moon {
+    display: block;
+}
+@media only screen and (max-width: 991px) {
+    header .switch__theme {
+        position: absolute;
+        right: 85px;
+    }
+}
+.dark #btn__switch .fa-sun {
+    display: block;
+}
+.dark #btn__switch .fa-moon {
+    display: none;
+}
+.dark#myBody {
+    background-color: #151515;
+    color: #afafaf;
+}
+.dark .title h3 {
+    color: white;
+}
+.dark a.read {
+    color: white;
+}
+.dark a.read:hover {
+    color: #189a46;
+}
+
+/* DARK HEADER */
+.dark header {
+    background-color: #151515;
+}
+.dark header .navbar {
+    background-color: #151515;
+}
+.dark .navbar-nav .nav-item .nav-link, .dark .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: white;
+}
+.dark .navbar-nav .nav-item:hover .nav-link, .dark .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    color: #189a46;
+    background-color: #151515;
+}
+.dark .navbar-nav .nav-item.active .nav-link {
+    color: #189a46;
+}
+.dark .dropdown-menu {
+    background-color: #151515;
+}
+
+/* DARK FEATURE */
+.dark .feature {
+    background-color: #222;
+}
+.dark .feature .card {
+    background-color: #151515;
+}
+.dark .feature .card:hover {
+    background-color: #222;
+}
+.dark .feature .card h4 {
+    color: white;
+}
+.dark .feature .card h4:hover {
+    color: #189a46;
+}
+
+/* DARK SERVICE */
+.dark .service .service__text li {
+    color: white;
+}
+.dark .service .service__text i {
+    background-color: #222;
+}
+
+/* DARK PACKAGES */
+.dark .packages {
+    background-color: #222;
+}
+.dark .packages .packages__card {
+    background-color: #151515;
+}
+.dark .packages .card__top h6 {
+    color: white;
+}
+
+/* DARK TESTIMONIAL */
+.dark .testimonial {
+    background-color: #222;
+}
+.dark .testimonial .item__content {
+    background-color: #151515;
+}
+.dark .testimonial .testimonial__avt .avt__text h3 {
+    color: white;
+}
+
+/* DARK FOOTER */
+.dark footer .footer__content a {
+    color: #afafaf;
+}
+.dark footer .footer__content a:hover {
+    color: white;
 }
