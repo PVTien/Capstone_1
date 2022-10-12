@@ -140,6 +140,20 @@ gap: 20px;
  .card {
    border: none;
 } 
+.card:hover{
+    animation: updown .5s linear forwards;
+    transition: all .5s;
+    }
+
+     @keyframes updown{
+    form {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+    
+     }
 .containertotal{
     margin: none;
     background-color: rgb(147,107,232,5%);
