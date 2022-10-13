@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    color: #696969;
+}
+.title h6 {
+    font-size: 1.2rem;
+    color: #f53626;
+    font-weight: 400;
+}
+.title h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: black;
+}
+a.read {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid #189a46;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all .5s;
+}
+a.read:hover {
+    color: #189a46;
+}
+
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 40px;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
+}
+.navbar .navbar-brand span {
+    color: #189a46;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.navbar-nav .nav-item.active .nav-link {
+    color: #189a46;
+}
+.navbar-nav .nav-item.dropdown .nav-link i {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.navbar-nav .nav-item .nav-link, .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: black;
+    font-size: 1.2rem;
+    transition: all .5s;
+}
+.navbar-nav .nav-item:hover .nav-link, .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    color: #189a46;
+    background-color: white;
+}
+.navbar-nav .nav-item::after, .navbar-nav .nav-item .dropdown-menu .dropdown-item::after {
+    content: "";    
+    height: 0.1rem;
+    background-color: #189a46;
+    display: block;
+    width: 0;
+    transition: all .5s;
+}
+.navbar-nav .nav-item:hover::after, .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover::after {
+    width: 100%;
+}
+header .navbar .navbar-toggler i {
+    background-color: #189a46;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    color: white;
+    border-radius: 5px;
+}
+header .navbar .navbar-toggler i:hover {
+    border: 2px solid black;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #111;
+}
+footer .footer__content h6 {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+footer .footer__content li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+footer .footer__content a {
+    color: #696969;
+    text-decoration: none;
+    transition: all .3s;
+}
+footer .footer__content a:hover {
+    color: white;
+}
+footer .footer__content .social__network li {
+    display: inline-block;
+    margin-right: 15px;
+}
+footer .copyright p {
+    margin-bottom: 0;
+}
+footer .copyright a {
+    color: #f53626;
+    opacity: 0.9;
+}
+footer .copyright {
+    border-top: 1px solid rgba(103, 99, 99, 0.14);
+}
+
+
+/* DARK THEME */
+header button#btn__switch {
+    border: none;
+    background-color: transparent;
+    color: #696969;
+    font-size: 25px;
+    margin-left: 20px;
+}
+header #btn__switch .fa-sun {
+    display: none;
+}
+header #btn__switch .fa-moon {
+    display: block;
+}
+@media only screen and (max-width: 991px) {
+    header .switch__theme {
+        position: absolute;
+        right: 85px;
+        top: 28px;
+    }
+}
+.dark #btn__switch .fa-sun {
+    display: block;
+}
+.dark #btn__switch .fa-moon {
+    display: none;
+}
+.dark#myBody {
+    background-color: #151515;
+    color: #afafaf;
+}
+.dark .title h3 {
+    color: white;
+}
+.dark a.read {
+    color: white;
+}
+.dark a.read:hover {
+    color: #189a46;
+}
+
+/* DARK HEADER */
+.dark header {
+    background-color: #151515;
+}
+.dark header .navbar {
+    background-color: #151515;
+}
+.dark .navbar-nav .nav-item .nav-link, .dark .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: white;
+}
+.dark .navbar-nav .nav-item:hover .nav-link, .dark .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    color: #189a46;
+    background-color: #151515;
+}
+.dark .navbar-nav .nav-item.active .nav-link {
+    color: #189a46;
+}
+.dark .dropdown-menu {
+    background-color: #151515;
+}
+.dark header .navbar .navbar-toggler i:hover {
+    border: 2px solid white;
+}
+
+
+/* DARK FOOTER */
+.dark footer .footer__content a {
+    color: #afafaf;
+}
+.dark footer .footer__content a:hover {
+    color: white;
+}
