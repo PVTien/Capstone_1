@@ -717,3 +717,44 @@ header #btn__switch .fa-moon {
 .dark footer .footer__content a:hover {
     color: white;
 }
+
+
+/* BACK TO TOP */
+.back_to_top {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #189a46;
+    display: block;
+    font-size: 1rem;
+    border-radius: 50%;
+    z-index: 100;
+    
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+a.back_to_top {
+    text-decoration: none;
+    color: white;
+}
+a.back_to_top:hover {
+    transform: scale(1.2);
+}
+@media (max-width: 668px) {
+    .back_to_top {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 0.8rem;
+    }
+}
