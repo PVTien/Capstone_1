@@ -401,7 +401,8 @@ header .navbar .navbar-toggler i:hover {
     text-align: center;
 }
 .mfp-close-btn-in .mfp-close {
-    color: white; 
+    color: white;
+    font-size: 3rem;
 }
 
 
